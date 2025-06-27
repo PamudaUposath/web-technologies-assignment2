@@ -1,0 +1,101 @@
+<!-- https://github.com/PamudaUposath/web-technologies-assignment2 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <title>Pamuda's Portfolio</title>
+    <link rel="stylesheet" href="style.css" >
+</head>
+
+<body>
+    <!--Navbar-->
+    <header class="navbar">
+        <div class="container">
+        <a href="#intro" class="logo">Pamuda U de A Goonatilake</a>
+            <nav>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#intro">Intro</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button class="menu-toggle" id="menu-btn">&#9776;</button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!--Intro-->
+        <section id="intro" class="intro">
+            <div class="intro-container">
+                <img src="images/dp.png" alt="Pamuda Profile" class="profile-img">
+                <div class="intro-text">
+                    <h1 class="intro-text-head">Hi, I'm Pamuda...</h1>
+                    <p>A passionate Computer Science undergraduate and web developer creating beautiful, responsive websites.</p>
+                    <a href="#projects" class="btn">See My Work</a>
+                </div>
+            </div>
+        </section>
+
+
+        <!--About Me-->
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <p>I am a dedicated and enthusiastic Computer Science student at the University of Jaffna, passionate about web technologies and software development.</p>
+            <p>I enjoy learning new technologies, solving problems, and building projects that help people. I focus on clean, user-friendly design with mobile responsiveness.</p>
+            <p>Apart from coding, I love contributing to tech communities and participating in workshops and hackathons.</p>
+        </section>
+
+        <!--Projects-->
+        <section id="projects" class="projects">
+            <h2>Projects</h2>
+            <div class="project-list">
+                <div class="project">
+                    <img src="images/responsiveSitejpeg.jpeg" alt="Responsive Portfolio Screenshot" class="project-img">
+                    <h3>Responsive Portfolio Website</h3>
+                    <p>A mobile first portfolio website built with HTML, CSS, and JS, showcasing clean UI and smooth UX.</p>
+                    <a href="https://github.com/PamudaUposath/Portfolio-Pamuda/tree/dev" target="_blank">View Source</a>
+                </div>
+                <div class="project">
+                    <img src="images/todoImage.jpeg" alt="Responsive Portfolio Screenshot" class="project-img">
+                    <h3>ToDo List App</h3>
+                    <p>A simple ToDo app with CRUD operations using JavaScript, emphasizing usability and simplicity.</p>
+                    <a href="https://github.com/PamudaUposath/mern-todo-app" target="_blank">View Source</a>
+                </div>
+            </div>
+        </section>
+
+        <!--Contact-->
+        <section id="contact" class="contact">
+            <h2>Contact Me</h2>
+            <p>Feel free to get in touch with me via email or LinkedIn for collaboration, questions, or just to say hi!</p>
+            <div class="contact-buttons">
+                <a href="mailto:pamudaugoonatilake@gmail.com" class="btn">Email Me</a>
+                <a href="https://linkedin.com/in/pamuda-uposath-goonatilake" target="_blank" class="btn dark">LinkedIn</a>
+            </div>
+            <form class="form-box" action="https://docs.google.com/forms/d/e/1FAIpQLSdpRXKfcqhIjc5PCZZ7ngcdr63VHTDwiYS06zNqSWw0aOvTEA/formResponse" method="POST" target="hidden_iframe"  onsubmit="window.open('thankyou.html', '_self');">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="entry.1252217313" placeholder="Your Name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="entry.1998005250" placeholder="you@example.com" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="entry.1950905656" rows="5" placeholder="Your message..." required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+            
+        </section>
+    </main>
+
+    <footer class="footer">
+        &copy; 2025 Pamuda. All rights reserved.
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
